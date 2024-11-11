@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookSprint</title>
+    <style>
+           body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+        }
+         table {
+            width: 90%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+         
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #eaeaea;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .skills, .restaurant, .history, .motto {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills li, .restaurant li, .history li, .motto li {
+            margin-bottom: 8px;
+        }
+
+        /* Estilos para las imágenes de los chefs */
+        .chef-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        #registro_form {
+            margin-bottom: 600px; 
+        }
+         
+        .footer-buttons {
+            list-style: none;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px; 
+        }
+        .footer-buttons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        div li a img {
+            width: 100px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personajes de Cocina</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Foto</th>
+                <th>Nombre</th>
+                <th>Apodo</th>
+                <th>Tipo de Chef</th>
+                <th>Especialidad</th>
+                <th>Habilidades</th>
+                <th>Restaurante</th>
+                <th>Historia</th>
+                <th>Lema de cocina</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://img.freepik.com/fotos-premium/ilustracion-3d-joven-sosteniendo-plato-lleno-comida_1057-39400.jpg?w=1380" alt="Foto Marco" class="chef-photo"></td>
+                <td>Ismael</td>
+                <td>Speedy</td>
+                <td>Chef Junior</td>
+                <td>Comida Rápida</td>
+                <td class="Habilidades_epeciales">
+                    <ul>
+                        <li>Velocidad al cortar</li>
+                        <li>Creatividad con ingredientes básicos</li>
+                    </ul>
+                </td>
+                <td class="Restaurante">
+                    <ul>
+                        <li>Speedy's Food </li>
+                        <li>Restaurante especializado en hamburguesas y platos rápidos.</li>
+                    </ul>
+                </td>
+                <td class="Historia">
+                    <ul>
+                        <li>Chef joven, se formó en una escuela culinaria de la ciudad.</li>
+                        <li>Comenzó como asistente de cocina y rápidamente ascendió a chef por su habilidad para preparar
+                            platos rápidos con gran sabor.</li>
+                    </ul>
+                </td>
+                <td>Cocina rápida, pero de calidad</td>
+            </tr>
+            <tr>
+                <td><img src="https://img.freepik.com/fotos-premium/linda-chica-chef-sonriendo-uniforme-dando-bienvenida-e-invitando-sus-invitados-ilustracion-arte-dibujos-animados_839035-109350.jpg?w=1800" alt="Foto Marco" class="chef-photo"></td>
+                <td>Isabella</td>
+                <td>Gourmet</td>
+                <td>Chef Maestro</td>
+                <td>Alta Cocina</td>
+                <td class="Habilidades_epeciales">
+                    <ul>
+                        <li>Plating creativo</li>
+                        <li>Innovación</li>
+                        <li>Maridaje de sabores</li>
+                    </ul>
+                </td>
+                <td class="Restaurante">
+                    <ul>
+                        <li>Le Gourmet</li>
+                        <li>Restaurante de alta cocina con estrellas Michelin.</li>
+                    </ul>
+                </td>
+                <td class="Historia">
+                    <ul>
+                        <li>Formada en las mejores escuelas culinarias de Europa.</li>
+                        <li>Ha trabajado en los restaurantes más prestigiosos y ha ganado varios premios por su enfoque
+                            innovador en la cocina francesa.</li>
+                    </ul>
+                </td>
+                <td>La cocina es arte, y el arte no tiene límites</td>
+            </tr>
+            <tr>
+                <td><img src="https://img.freepik.com/fotos-premium/personaje-dibujos-animados-3d-chef-sushi_747552-21987.jpg?w=740" alt="Foto Marco" class="chef-photo"></td>
+                <td>Javier</td>
+                <td>Global</td>
+                <td>Chef Exótico</td>
+                <td>Cocina Internacional</td>
+                <td class="Habilidades_epeciales">
+                    <ul>
+                        <li>Uso de ingredientes naturales</li>
+                        <li>Innovación</li>
+                        <li>Maridaje de sabores</li>
+                    </ul>
+                </td>
+                <td class="Restaurante">
+                    <ul>
+                        <li>Global Flavors</li>
+                        <li>Restaurante internacional con platos de Asia, África y América Latina.</li>
+                    </ul>
+                </td>
+                <td class="Historia">
+                    <ul>
+                        <li>Chef autodidacta que ha viajado por el mundo y aprendido de chefs locales de cada región.</li>
+                        <li>Su cocina busca fusionar lo mejor de diferentes culturas gastronómicas.</li>
+                    </ul>
+                </td>
+                <td>El mundo es mi cocina</td>
+            </tr>
+            <tr>
+                <td><img src="https://img.freepik.com/fotos-premium/vista-mujer-3d-cocina_1086710-4252.jpg?w=2000" alt="Foto Marco" class="chef-photo"></td>
+                <td>Lucía</td>
+                <td>Veggie</td>
+                <td>Chef Vegetariano</td>
+                <td>Cocina Saludable</td>
+                <td class="Habilidades_epeciales">
+                    <ul>
+                        <li>Innovación</li>
+                        <li>Uso de ingredientes naturales</li>
+                    </ul>
+                </td>
+                <td class="Restaurante">
+                    <ul>
+                        <li>Green Plate</li>
+                        <li>Restaurante especializado en opciones vegetales y veganas.</li>
+                    </ul>
+                </td>
+                <td class="Historia">
+                    <ul>
+                        <li>Chef que adoptó el veganismo a una edad temprana y se ha dedicado a promover la cocina saludable
+                            y consciente.</li>
+                        <li>Es reconocido por su capacidad para hacer que los platos vegetales sean sabrosos y accesibles
+                            para todos.</li>
+                    </ul>
+                </td>
+                <td>La cocina vegetariana es un estilo de vida, no una moda.</td>
+            </tr>
+            <tr>
+            <td><img src="https://img.freepik.com/foto-gratis/ilustracion-3d-chef-senior-cuchara-madera-mostrando-pulgares-arriba_1057-46150.jpg?t=st=1731277588~exp=1731281188~hmac=2e6a0d3307b93d771ca339ca9f74da3a5acf1bf29e72f90841dce78e17767ae4&w=1380" alt="Foto Marco" class="chef-photo"></td>
+                <td>Diego</td>
+                <td>Fusion</td>
+                <td>Chef de Fusión</td>
+                <td>Fusión de Sabores</td>
+                <td class="Habilidades_epeciales">
+                    <ul>
+                        <li>Velocidad al cortar</li>
+                        <li>Control de temperatura</li>
+                        <li>Maridaje de sabores</li>
+                    </ul>
+                </td>
+                <td class="Restaurante">
+                    <ul>
+                        <li>Fusion Kitchen</li>
+                        <li>Restaurante de cocina experimental que mezcla ingredientes de distintas culturas culinarias.
+                        </li>
+                    </ul>
+                </td>
+                <td class="Historia">
+                    <ul>
+                        <li>Chef reconocido por su creatividad en la cocina, combinando sabores inesperados para crear
+                            platos sorprendentes.</li>
+                        <li>Su restaurante ha sido destacado por su capacidad para reinventar platos tradicionales con un
+                            toque único.</li>
+                    </ul>
+                </td>
+                <td>Innovar es éxito</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="footer-buttons">
+        <li><a href="/exercises/web__html/formulario.html"><img src="https://placehold.co/250x100/orange/white?text= Anterior" /></a></li>
+    </br>
+    
+    <div class="footer-buttons" style="text-align: center; margin-top: 20px;">
+    <a href="/exercises/web__html/inicio.html" style="font-size: 18px; color: #333; text-decoration: none;font-style: italic"> Volver al Inicio </a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+* {
+    border: 1px solid black;
+
+}
+h1{
+    color: red;
+}
+#header {
+    color: blue;
+
+}
+.img{
+    margin: 5px;
+    padding: 5%;
+    width: 250px;
+}
+img.img{
+    padding: 50px;
+}
+a{
+    font-size: 1.5em;
+
+}
+li a{
+    font-size: 1.5em;
+}
+ol > li a{
+    font-size: 0.5em;
+}
+h1 + p{
+    color: chocolate;
+}
+h2, 
+li{
+    border: 2px dashed red;
+}

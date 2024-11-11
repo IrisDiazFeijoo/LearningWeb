@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookSprint</title>
+    <style>
+        body {
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            margin: 0;
+            min-height: 100vh;
+            background-image: url(https://img.freepik.com/vector-gratis/herramientas-cocina-esbozadas_23-2147527731.jpg?t=st=1731271578~exp=1731275178~hmac=ea8cdd688ddbd10215c32a72322a881353d032c63a843db0f7b158087ebb0312&w=1380);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        header {
+            text-align: center;
+        }
+        .avatar {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-image: url(https://img.freepik.com/foto-gratis/vello-alegre-delantal-gafas-panqueque_1057-44957.jpg?t=st=1731003760~exp=1731007360~hmac=cc881f1d337994212e8a0731531c8677c9a1782e15d32412ca7b1e368a20d482&w=1380);
+            background-position: center;
+            background-size: cover;
+            margin: 20px auto 0;
+            margin-bottom: 100px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute; 
+            left: 50%; 
+            top: 60%; 
+            transform: translateX(-50%); 
+            text-align: center;
+        }
+        ul li {
+            display: inline; 
+            margin-right: 10px; 
+        }
+          ul li a img {
+            width: 250px; 
+            height: 100px; 
+        }
+         #avatar_form {
+            margin-bottom: 300px; /* Ajustamos el espacio al fondo */
+        }
+    
+         h2 {
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            display: block;
+            flex-direction: column;
+            margin-top: 20px;
+            width: 30%;
+            margin: 0 auto; 
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ccc; 
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        
+        }
+        form label, form input, form select, form textarea {
+            margin-bottom: 20px; 
+        }
+        #registro_form {
+            margin-bottom: 600px; 
+        }
+         
+        .footer-buttons {
+            list-style: none;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px; 
+        }
+        .footer-buttons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        div li a img {
+            width: 100px;
+            height: 60px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>REGÍSTRATE  Y CREA TU AVATAR</h1>
+        <br/>
+        <div class="avatar"></div>
+        <br/>
+        
+        
+    </header>
+
+    <h2 id="registro">REGISTRO</h2>
+    <form id="registro_form">
+        <label for="user_name">Introduce tu nombre:</label>
+        <br />
+        <input type="text" placeholder="Introduce tu nombre" name="user_name" />
+        <br/>
+        <label for="user_email">Introduce tu email:</label>
+        <br />
+        <input type="text" placeholder="Introduce tu email" name="user_email" />
+        <br/>
+        <label for="user_password">Introduce tu contraseña:</label>
+        <br />
+        <input type="password" placeholder="Contraseña" name="user_password" />
+        <br/>
+        <label for="User_birthdate">Selecciona tu fecha de nacimiento:</label>
+        <br />
+        <input type="date" name="user_birthdate">
+        <br/>
+
+    </form>
+    <ul>
+        <li><a href="#avatar">Cea tu avatar</a></li>
+    </ul>
+
+
+    <h2 id="avatar">CREA TU AVATAR</h2>
+
+    <form>
+    <label for="base_character">Selecciona un personaje base:</label>
+    <br/>
+    <select name="base_character" id="base_character" required>
+        <option value="">Selecciona...</option>
+        <option value="chef_junior">Chef Junior - Comida Rápida</option>
+        <option value="chef_maestro">Chef Maestro - Alta Cocina</option>
+        <option value="chef_exotico">Chef Exótico - Cocina Internacional</option>
+        <option value="chef_vegetariano">Chef Vegetariano - Cocina Saludable</option>
+        <option value="chef_fusion">Chef de Fusión - Fusión de Sabores</option>
+    </select>
+    <br/>
+    <label for="apodo">Introduce el nombre de tu personaje:</label>
+    <br/>
+    <input type="text" placeholder="Introduce el nombre tu personaje" name="apodo" />
+    <br />
+    <label for="eye_color">Color de Ojos:</label>
+    <br/>
+    <select id="eye_color" name="eye_color">
+        <option value="azul">Azul</option>
+        <option value="verde">Verde</option>
+        <option value="marron">Marrón</option>
+    </select>
+    <br/>
+    <label for="hair_style">Estilo de Cabello:</label>
+    <br />
+    <select id="hair_style" name="hair_style">
+        <option value="corto">Corto</option>
+        <option value="medio">Medio</option>
+        <option value="largo">Largo</option>
+        <option value="rapado">Rapado</option>
+    </select>
+    <br/>
+    <label for="apron_color">Elige el color de tu mandil:</label>
+    <br />
+    <input type="color" id="apron_color" name="apron_color" value="#ff0000" />
+    <br />
+    <label for="Especialidad">¿Que cocina dominas?</label>
+    <br />
+    <input type="radio" name="especialidad" value="1" /> Italiana
+    <input type="radio" name="especialidad" value="2" /> Japonesa
+    <input type="radio" name="especialidad" value="3" /> Mexicana
+    <input type="radio" name="especialidad" value="4" /> India
+    <input type="radio" name="especialidad" value="5" /> China
+    <input type="radio" name="especialidad" value="6" /> Española
+    <input type="radio" name="especialidad" value="7" /> Vegetariana
+    <input type="radio" name="especialidad" value="8" /> Coreana
+    <br />
+    <label for="Habilidades_epeciales">Selecciona tus hobbies: </label>
+    <br />
+    <input type="checkbox" name="habilidades_especiales" value="a" /> Velocidad al cortar
+    <input type="checkbox" name="habilidades_especiales" value="b" /> Plating creativo
+    <input type="checkbox" name="habilidades_especiales" value="c" /> Control de temperatura
+    <br/>
+    <input type="checkbox" name="habilidades_especiales" value="d" /> Uso de ingredientes naturales
+    <input type="checkbox" name="habilidades_especiales" value="e" /> Innovación
+    <input type="checkbox" name="habilidades_especiales" value="f" /> Maridaje de sabores
+    <input type="checkbox" name="habilidades_especiales" value="g" /> Reposteria
+    <br />
+    <label for="user_comments">¿Cuál es tu lema en la cocina?</label>
+    <br />
+    <textarea placeholder="Haz de tu lema de cocina un slogan" name="user_comments" id="user_comments"></textarea>
+    <br />
+    </form>
+    <div class="footer-buttons">
+         <li><a href="/exercises/web__html/inicio.html"><img src="https://placehold.co/250x100/orange/white?text= Anterior" /></a></li>
+        <li><a href="/exercises/web__html/resultados.html"><img src="https://placehold.co/250x100/orange/white?text= Siguiente" /></a></li>
+    </div>
+    
+    
+   
+
+
+
+    
+    
+</body>
+</html>
