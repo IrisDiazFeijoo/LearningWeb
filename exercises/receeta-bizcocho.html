@@ -3,21 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        div {
-            border: 1px solid black;
-            padding: 15px;
-             width: 30%;
-        }
-    </style>
+    <title>Bizcocho de chocolate</title>
+    <link rel="stylesheet" href="receta-bizcocho.css">
 </head>
 <body>
+    <h1 id="header">BUEN COMER</h1>
     <h1> Bizcocho de chocolate casero</h1>
-    <img alt="Una imagen para indicar elemento img de HTML"
-        src="https://imag.bonviveur.com/interior-del-bizcocho-de-chocolate.webp"height="500px"/>
-    <p> Receta muy sencilla y chocolateada que esconde un ingrediente que puede parecer raro para un bizcocho:<br /> vamos a
+    <img class="imagenBizcocho" alt="Una imagen para indicar elemento img de HTML" src="https://imag.bonviveur.com/interior-del-bizcocho-de-chocolate.webp"height="500px"/>
+    <p> Receta muy sencilla y chocolateada que esconde un ingrediente que puede parecer raro para un bizcocho: vamos a
     utilizar <strong>agua caliente</strong>, que va a ser la que <strong>va a dar la jugosidad extra</strong> que tiene este bizcocho.</p>
+    <div id="contenedor">
+    <div id="contenedor1">
     <h2>INFORMACIÓN DE LA RECETA</h2>
     <ul>
         <li><strong>Tiempo de preparación:</strong> de preparación: 15 minutos</li>
@@ -28,6 +24,8 @@
         <li><strong>Tipo de cocina: </strong> internacional</li>
         <li><strong>Calorías por ración (kcal):</strong> 425</li>
     </ul>
+    </div>
+    <div id="contenedor2">
     <h2>INGREDIENTES</h2>
     <ul>
         <li>3 huevos M</li>
@@ -40,8 +38,10 @@
         <li>1 pizca de sal</li>
         <li>100 g de agua caliente</li>
     </ul>
+    </div>
+    </div>
     <h2>PREPARACIÓN: PASO A PASO</h2>
-    <ol>
+    <ol class="preparacion">
         <li>Batimos los huevos y el azúcar hasta que doblen su volumen.</li>
         <li>Añadimos el aceite.</li>
         <li>Agregamos la leche.</li>
@@ -53,18 +53,18 @@
         <li>Dejamos enfriar 15 minutos y desmoldamos.</li>
     </ol>
    
-    <div>
-            <h3> El truco del chef</h3>
-        <img alt="Una imagen para indicar elemento img de HTML"
-            src="https://img.freepik.com/foto-gratis/celebracion-dia-trabajo-retrato-trabajador-trabajo_23-2151755696.jpg?t=st=1730822452~exp=1730826052~hmac=51102f4060384df77bd86042992d4dfe9417bccaaa4d6ddba30da035589d948e&w=1800"height="150px"/>
-
-        <p> ¡Añadir unas nueces troceadas! </p>
+    <div class="truco">
+        <h3 id="titulo"> El truco del chef</h3>
+        <img alt="Una imagen para indicar elemento img de HTML" src="https://img.freepik.com/foto-gratis/celebracion-dia-trabajo-retrato-trabajador-trabajo_23-2151755696.jpg?t=st=1730822452~exp=1730826052~hmac=51102f4060384df77bd86042992d4dfe9417bccaaa4d6ddba30da035589d948e&w=1800"height="250px"/>
+        <p> ¡Añadir unas nueces troceadas! <img class="icono" alt="un gorro de chef" src="https://img.freepik.com/psd-gratis/diseno-logotipo-restaurante_23-2151249844.jpg?t=st=1731357623~exp=1731361223~hmac=6f6fea42c3137536ae25e4757c01761b3d27b14e9f16402bfcfb505fae725aae&w=1380"> </p>
     </div>
+    <div id="sabias">
     <h3><em>Sabías que...</em></h3>
     <p> Sabías que el origen de la palabra 'bizcocho' está en el vocablo romano 'bis coctus', que significa literalmente 'cocido
     dos veces'? Si bien es cierto que sus orígenes se encuentran en la Edad Antigua, las recetas modernas de bizcocho, como este
     delicioso bizcocho de chocolate, tienen poco que ver con los bizcochos que comían los antiguos romanos.<br /><u>Si eres de los que piensa que la repostería casera es difícil, seguro que la receta de este bizcocho de chocolate te
-    hará cambiar radicalmente de idea</u></p>
+    hará cambiar radicalmente de idea.</u></p>
+    </div>
     
 </body>
 </html>

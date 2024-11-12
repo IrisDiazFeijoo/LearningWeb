@@ -1,0 +1,109 @@
+
+body {
+    background-image: url(https://img.freepik.com/vector-premium/marco-panaderia-dulce-linea-productos-horneados-postres-menu-tarjeta-receta-borde-o-ilustracion-vectorial-tematica-culinaria_229548-4636.jpg?w=1800);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 1000px;
+    margin: auto;
+}
+#header{
+    background-color: rgb(248, 248, 248);
+    text-align: center; 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 400%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 4px 4px #928c8c;
+    font-stretch: expanded;
+}
+
+.imagenBizcocho{
+    width: 1000px;
+    margin: auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+        
+}
+div {
+     border: 1px solid black;
+     padding: 15px;
+     width: 60%;
+     margin: auto;
+     text-align: center;
+    }
+#titulo{
+    font-size: 200%;
+    text-align: left;
+    margin-top: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: rgb(199, 110, 28)
+    
+}
+p,li{
+    font-size: 125%;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+#contenedor {
+    display: flex;
+    border: none;
+    width: 100%;
+    
+}
+#contenedor1, #contenedor2 {
+    border-radius: 50px;
+    background: #f7f7f4;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+    
+}
+
+#contenedor1 h2, #contenedor2 h2 {
+    text-align: center;
+    margin: 0 0 20px 0;
+    text-decoration: underline;
+    
+}
+#contenedor1 ul, #contenedor2 ul {
+    padding-left: 0;
+    text-align: left;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+#contenedor1 li, #contenedor2 li {
+    margin-bottom: 15px;
+}
+.truco{
+    border: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.preparacion li{
+    margin-bottom: 25px;  
+}
+.icono{
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+}
+#sabias{
+    border: none;
+    background: #f7f7f4;
+    margin-bottom: 50px;
+    width: 1000px;
+}
+#sabias h3{
+    text-align: left;
+    font-size: 150%;
+    font-family: cursive;
+}
+#sabias p{
+    font-family:cursive;
+}
